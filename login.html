@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='CSS/login.css') }}">
+
+</head>
+<body action="/login">
+
+
+<section class="forms-section" >
+  <img class="logo" src="/static/HealthGPT+.png">
+  <img class="HealthGpt_title" src="/static/HealthGPT+_name.jpg">
+  <div class="forms">
+    <img class="chatbot-image" src="/static/login_photo.gif">
+    <div class="form-wrapper is-active">
+        <span class="underline"></span>
+      </button>
+      <form class="form-login" action="/login" method='POST'>
+          <legend>Please, enter your email and password for login</legend>
+          <div class="input-block">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" type="email" name="login-email" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" name="login-password" required>
+          </div>
+        <br>
+        <button class="button" type="button" onclick="getFocus()"><a href="/home">Login</a></button>
+        <!--<button type="submit" value="log">Login</a></button>-->
+        <p>Don't have an account? <a href="/register">Sign up here!</a></p>
+      </form>
+    </div>
+  
+  </div>
+</section>
+
+</body>
+</html>
