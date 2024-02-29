@@ -32,7 +32,7 @@ We have also come up with our customized medical store for every individual’s 
 Every doctor has different sections for treatment, here HealthGPT+ provides suitable doctors to treat particular diseases within the nearby location.
 
 
-  # how to run project in codespaces
+  # Steps to run the project in codespaces
 <h4>1>python --version(If it doesn't install then install it first)</h4>
 <h4>2>pip install virtualenv</h4>
 <h4>3>virtualenv venv</h4>
@@ -45,6 +45,4 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 
 
 # YouTube Link: https://www.youtube.com/watch?v=di10Dyh7Lm0&t=7s
-
-
 
