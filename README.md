@@ -32,14 +32,17 @@ We have also come up with our customized medical store for every individual’s 
 Every doctor has different sections for treatment, here HealthGPT+ provides suitable doctors to treat particular diseases within the nearby location.
 
 
-# how to run project in codespaces
-1)python --version(If it doesn't install then install it first)
-2)pip install virtualenv
-3)virtualenv venv
-4)python -m pip install flask
-5)pip install mysql-connector-python
-6)pip install pylint
-7)python app.py
+  # how to run project in codespaces
+<h4>1>python --version(If it doesn't install then install it first)</h4>
+<h4>2>pip install virtualenv</h4>
+<h4>3>virtualenv venv</h4>
+<h4>4>python -m pip install flask</h4>
+<h4>4>python -m pip install flask</h4>
+<h4>5>pip install mysql-connector-python</h4>
+<h4>6>pip install pylint</h4>
+<h4>7>python app.py</h4>
+
+
 
 # YouTube Link: https://www.youtube.com/watch?v=di10Dyh7Lm0&t=7s
 
