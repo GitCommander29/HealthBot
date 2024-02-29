@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGPT+ About Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/about.css') }}">
+    
+</head>
+<body>
+  <!--Navbar-->
+  <header>
+    <img class="logo" src="/static/Home_Page_logo.png">
+          <!--<h5 class="logo-na"><italic>Chatbot Assistant<italic></h5>-->
+     
+            <nav>
+              <ul class="nav_links option">
+                  <li><a  href="/home" >Home</a></li>
+                  <li><a  href="/about">About</a></li>
+                  <li><a  href="/contact">Contact</a></li>
+                  <li><a  href="#medicines">Medicine Shop</a></li>
+                  <li><a  href="#Doctor">Doctor Consultation</a></li>
+                  <!--<li><a  href="/logout">{{ session['email']}}</a></li>-->
+                  <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropbtn">{{ session['email']}}</a>
+                    <div class="dropdown-content">
+                        <a href="/my_acc">My Account</a>
+                        <a href="/logout">Logout</a>
+                        
+                    </div>
+                </li>
+                  
+              </ul>
+          </nav>
+
+           
+
+
+
+             
+  </header>
+  <marquee class="creator" >In most people, the left lung is 10% smaller than the right&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The human brain operates on 12 to 25 watts of power        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Human noses can remember 50,000 different scents           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our brains don't feel pain                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The tongue is the strongest muscle in the entire body.     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                          </marquee>
+ 
+  <!--Navbar-->
+<!--ABOUT-->
+<section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          <br>  
+          <div class="container text-center mt-5 mb-2">
+          <h1 class="mb-0">ABOUT OUR WEBSITE</h1><span>
+            <br>
+          <p> HealthGPT+ solves the problem by providing accurate, personalized, and accessible health information, empowering individuals to make informed decisions and take control of their well-being.
+            Tracking your current location, it displays the nearest hospitals in your vicinity.</span></div>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-6 float-right">
+            <img alt="hero" src="/static/Login_photo.gif">
+       </div>
+      </div>
+    </div>
+  </section>
+<!--ABOUT-->
+
+<div class="container text-center mt-5 mb-2">
+  <h1 class="mb-0">TEAM HACKBLASH</h1><span>INNOVATE , ELEVATE , COLLABORATE </span></div>
+<div class="container mt-3">
+  <div class="row">
+      <div class="col-md-3">
+          <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/71dSFqC/Picture1.jpg" width="90">
+              <h5 class="mt-3 name">Trisanku Sasmal</h5><span class="work d-block">NARULA INSTITUTE OF TECHNOLOGY(NIT), KOLKATA</span><span class="work d-block">STUDENT</span>
+              <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+              <div class="mt-4">
+                  <h6 class="v-profile"><a href="https://www.linkedin.com/in/trisanku-sasmal-b4b90822b/">View Profile</a></h6>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/QrQY4vS/Picture2.jpg" width="90">
+              <h5 class="mt-3 name">Nirmalya Sheet</h5><span class="work d-block">INSTITUTE OF ENGINEERING & MANAGEMENT(IEM), KOLKATA</span><span class="work d-block">STUDENT</span>
+              <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+              <div class="mt-4">
+                  <h6 class="v-profile"><a href="https://www.linkedin.com/in/nirmalya-shit-87390a224/" >View Profile</a></h6>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/6JngMNg/Picture3.jpg" width="90">
+              <h5 class="mt-3 name">Sayantika Paul</h5><span class="work d-block">UNIVERSITY OF ENGINEERING & MANAGEMENT(UEM), KOLKATA</span><span class="work d-block">STUDENT</span>
+              <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+              <div class="mt-4">
+                  <h6 class="v-profile"><a href="https://www.linkedin.com/in/sayantika-paul24/" >View Profile</a></h6>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/dtt5QXd/Picture1.jpg" width="90">
+              <h5 class="mt-3 name">Abhijnan Gupta</h5><span class="work d-block">BENGAL INSTITUTE OF TECHNOLOGY(BIT), KOLKATA</span><span class="work d-block">STUDENT</span>
+              <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+              <div class="mt-4">
+                  <h6 class="v-profile"><a href="https://www.linkedin.com/in/abhijnan-gupta-6b1835227/" >View Profile </a></h6>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body> 
+</html>
