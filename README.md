@@ -37,12 +37,11 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 <h4>2>pip install virtualenv</h4>
 <h4>3>virtualenv venv</h4>
 <h4>4>python -m pip install flask</h4>
-<h4>4>python -m pip install flask</h4>
-<h4>5>pip install mysql-connector-python</h4>
+<!-- <h4>5>pip install mysql-connector-python</h4> -->
 <h4>6>pip install pylint</h4>
 <h4>7>python app.py</h4>
 
-# For login use email "abc@gmail.com" and password = "abc123"
+# After running the website you need to login to see the home page of the website so you use email as "abc@gmail.com" and password  as "abc123".
 
 
 
