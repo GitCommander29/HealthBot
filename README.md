@@ -2,11 +2,15 @@
 
 # HealthBot
 
+![image](https://github.com/Abhijnan29/HealthBot/assets/95416360/4d4fb175-7c71-401b-8945-84dfa643504d)
+
 HealthGPT+ is an AI-powered platform designed to provide personalized health information and support to individuals. It utilizes the power of natural language processing and machine learning to understand and respond to health-related inquiries, offering insights and recommendations for a variety of health topics. 
 
 Besides tracking your current location, it displays the nearest hospitals in your vicinity.
 
 Our website also provides Some important features like MedMart+ (Which is an online AI-based Medicine shop) and Doctor+(Which is an online doctor Consultation site near Your Location)
+
+
 
 # List Of Features Offered Our Project 
 	Healthcare AI Chatbot Assistant 
@@ -46,4 +50,5 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 
 
 # YouTube Link: https://www.youtube.com/watch?v=di10Dyh7Lm0&t=7s
+# Devfolio Link: https://devfolio.co/projects/healthgpt-301e
 
