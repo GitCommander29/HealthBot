@@ -42,6 +42,8 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 <h4>6>pip install pylint</h4>
 <h4>7>python app.py</h4>
 
+# For login use email "abc@gmail.com" and password = "abc123"
+
 
 
 # YouTube Link: https://www.youtube.com/watch?v=di10Dyh7Lm0&t=7s
