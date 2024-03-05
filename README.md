@@ -45,10 +45,19 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 <h4>6>pip install pylint</h4>
 <h4>7>python app.py</h4>
 
-# After running the website you need to login to see the home page of the website so you use email as "abc@gmail.com" and password  as "abc123".
+# After run the website you need to login to see the home page of the website so you use the email as "abc@gmail.com" and password  as "abc123".
 
+# Language: 
+	Python, Javascript
+# Framework: 
+	Flask, Dialogflow
+# Tools: 
+	VSCode
+ # Database :
+	MySQL
 
-
-# YouTube Link: https://www.youtube.com/watch?v=di10Dyh7Lm0&t=7s
-# Devfolio Link: https://devfolio.co/projects/healthgpt-301e
+# YouTube Link: 
+	https://www.youtube.com/watch?v=di10Dyh7Lm0&t=7s
+# Devfolio Link: 
+	https://devfolio.co/projects/healthgpt-301e
 
