@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pharmacy</title>
+  </head>
+  <style>
+    ul {
+      list-style: none;
+    }
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+      text-align: center;
+      background-color: 19DFE8;
+      margin: 20px;
+      display: inline-block;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 10px; /* add spacing between items */
+    }
+  </style>
+  <body>
+    <h1>Pharmacy Products</h1>
+    <ul>
+      {% for product in products %}
+      <li>
+        <div class="product-card">
+          <img src="{{ product.image }}" />
+          {{ product.name }}
+          <br />
+          ₹{{ product.price }}
+
+          <br />
+          <!--<label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>-->
+          <button onclick="addToCart({{ product.id }})">Add to Cart</button>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/cart">View Cart</a>
+
+    <script>
+      function addToCart(productId) {
+        fetch("/add_to_cart", {
+          method: "POST",
+          body: new URLSearchParams({ product_id: productId }),
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            alert(data.message);
+          });
+      }
+    </script>
+  </body>
+</html>

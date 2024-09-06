@@ -1,14 +1,31 @@
 from datetime import timedelta
 from flask import Flask, render_template, request, redirect, jsonify,url_for, session
 import mysql.connector
-import openai
+# import openai
 #from passlib.hash import sha256_crypt
 app = Flask(__name__)
 
 app.secret_key ='bdc556f280795c3fbeeceec6c1371403e130cfef785cbd02ba648f3a10ff3c75'
 
 # Set up OpenAI API credentials
-openai.api_key = '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'
+# openai.api_key = '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'
+
+# Sample product data (you can replace this with a database)
+products = [
+    {"id": 1, "name": "Medicine A", "price": 10.00, "image":'https://static.oxinis.com/healthmug/image/product/102338-2-1000.webp'},
+    {"id": 2, "name": "Medicine B", "price": 15.00, "image":'https://www.jeevandip.com/wp-content/uploads/2022/07/librium10-tab.png'},
+    {"id": 3, "name": "Medicine C", "price": 20.00, "image":'https://meds.myupchar.com/126487/18f7ef0ffd194851bcaf003816e63909.jpg'},
+    {"id": 4, "name": "Medicine D", "price": 10.00, "image":'https://static.oxinis.com/healthmug/image/product/102338-2-1000.webp'},
+    {"id": 5, "name": "Medicine E", "price": 15.00, "image":'https://www.jeevandip.com/wp-content/uploads/2022/07/librium10-tab.png'},
+    {"id": 6, "name": "Medicine F", "price": 20.00, "image":'https://meds.myupchar.com/126487/18f7ef0ffd194851bcaf003816e63909.jpg'},
+    {"id": 7, "name": "Medicine G", "price": 10.00, "image":'https://static.oxinis.com/healthmug/image/product/102338-2-1000.webp'},
+    {"id": 8, "name": "Medicine H", "price": 15.00, "image":'https://www.jeevandip.com/wp-content/uploads/2022/07/librium10-tab.png'},
+    {"id": 9, "name": "Medicine I", "price": 20.00, "image":'https://meds.myupchar.com/126487/18f7ef0ffd194851bcaf003816e63909.jpg'},
+]
+
+cart = []
+
+
 
 # MySQL database configuration
 db = mysql.connector.connect(
@@ -134,6 +151,38 @@ def forget():
 @app.route("/chat")
 def chat():
     return render_template("chatbot.html")
+
+
+@app.route("/pharm")
+def product():
+    return render_template('pharmacy.html', products=products)
+
+@app.route('/add_to_cart', methods=['POST'])
+def add_to_cart():
+    product_id = int(request.form['product_id'])
+    product = next((p for p in products if p['id'] == product_id), None)
+    
+    if product:
+        cart.append(product)
+    
+    return jsonify({'message': 'Item added to cart'})
+
+@app.route('/cart')
+def view_cart():
+    total_price = sum(item['price'] for item in cart)
+    return render_template('cart.html', cart=cart, total_price=total_price)
+
+# ...
+
+@app.route('/remove_from_cart', methods=['POST'])
+def remove_from_cart():
+    product_id = int(request.form['product_id'])
+    product = next((p for p in cart if p['id'] == product_id), None)
+    
+    if product:
+        cart.remove(product)
+    
+    return jsonify({'message': 'Item removed from cart'})
 
 # Define the /api route to handle POST requests
 #@app.route("/api", methods=["POST"])
